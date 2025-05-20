@@ -64,7 +64,7 @@
       <el-form-item label="Recipe Image">
         <el-upload
             class="avatar-uploader"
-            action="http://localhost:8080/upload"
+            action="https://recipemanager-c0033f7f55ed.herokuapp.com/recipemanager/upload"
             :headers="uploadHeaders"
             :show-file-list="false"
             :on-success="handleImageSuccess"

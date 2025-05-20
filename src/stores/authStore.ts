@@ -29,7 +29,7 @@ export interface AuthState {
     error: string | null;
 }
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
+const API_URL = import.meta.env.VITE_API_URL || 'https://recipemanager-c0033f7f55ed.herokuapp.com/recipemanager';
 
 export const useAuthStore = defineStore('auth', {
     state: (): AuthState => ({
