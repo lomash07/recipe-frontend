@@ -1,0 +1,48 @@
+@import './base.css';
+
+/* App Container */
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--gap-large);
+  font-weight: normal;
+  background: var(--color-background-soft);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Link Styling */
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 6px;
+  border-radius: var(--radius);
+  font-weight: 500;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.15);
+  }
+}
+
+/* Responsive Layout */
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--gap-large);
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: var(--gap-large);
+    padding: var(--gap-large);
+  }
+}
+
